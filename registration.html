@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -34,44 +34,145 @@ MAIN CONTENT
 <div id="login-page">
     <div class="container">
 
-        <form class="form-login" action="index.html">
-            <h2 class="form-login-heading">register now</h2>
-            <div class="login-wrap">
-                <label>Enter your First Name</label>
-                <input type="text" class="form-control" placeholder="First Name" autofocus>
-                <br>
-                <label>Enter your Last Name</label>
-                <input type="text" class="form-control" placeholder="Last Name" autofocus>
-                <br>
-                <label>Enter your Email Address</label>
-                <input type="email" class="form-control" placeholder="Email" autofocus>
-                <br>
-                <label>Enter your Contact Number</label>
-                <input type="text" class="form-control" placeholder="Contact Number" autofocus>
-                <br>
-                <label>Enter your Password</label>
-                <input type="password" class="form-control" placeholder="Password" autofocus>
-                <br>
-                <label>Re-Enter your Password</label>
-                <input type="password" class="form-control" placeholder="Re-enter Password">
-                <br>
-                <label>Select Your Vehicle Type</label>
-                <br>
-                    <select name="cars" class="form-control" >
-                        <option value="van">Van</option>
-                        <option value="bus">Bus</option>
-                        <option value="car">Car</option>
-                     </select>
-                <br>
+        <form class="form-register" action="index.html">
+            <h2 class="form-register-heading">register now</h2>
+            <div class="register-wrap">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Enter your First Name</label>
+                        <input type="text" class="form-control" placeholder="First Name" autofocus></div>
 
-                <label>Enter Number of Seats</label>
-                <input type="number" class="form-control" placeholder="Number of Seats">
+                    <div class="col-md-6"><label>Enter your First Name</label>
+                        <label>Enter your Last Name</label>
+                        <input type="text" class="form-control" placeholder="Last Name" autofocus></div>
+                </div>
                 <br>
-                <label>Enter Vehicle Regisration Number</label>
-                <input type="text" class="form-control" placeholder="Vehicle Registration Number">
-                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Enter your Email Address</label>
+                        <input type="email" class="form-control" placeholder="Email" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Enter your Contact Number</label>
+                        <input type="text" class="form-control" placeholder="Contact Number" autofocus>
+                    </div>
+                </div>
 
-                <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i>REGISTRER</button>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Enter your Password</label>
+                        <input type="password" class="form-control" placeholder="Password" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Re-Enter your Password</label>
+                        <input type="password" class="form-control" placeholder="Re-enter Password">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Select Your Vehicle Type</label>
+                        <select name="cars" class="form-control">
+                            <option value="van">Van</option>
+                            <option value="bus">Bus</option>
+                            <option value="car">Car</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Select Your Vehicle Model</label>
+                        <select name="cars" class="form-control">
+                            <option value="van">Nissan</option>
+                            <option value="bus">Toyota</option>
+                            <option value="car">Mitsubishi</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Enter Number of Seats</label>
+                        <input type="number" class="form-control" placeholder="Number of Seats">
+                    </div>
+                    <div class="col-md-6">
+                        <label>Enter Number of Seats Remaining</label>
+                        <input type="number" class="form-control" placeholder="Number of Seats Remaining">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Enter Caretaker Name (if any)</label>
+                        <input type="email" class="form-control" placeholder="Caretaker Name" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Enter Caretaker Contact Number(if any)</label>
+                        <input type="text" class="form-control" placeholder="Caretaker Contact Number" autofocus>
+                    </div>
+                </div>
+
+                <br>
+                <label>Enter Vehicle Permit Number</label>
+                <input type="text" class="form-control" placeholder="Vehicle Permit Number">
+                <br>
+                <label>Select Air conditioning type</label>
+                <br>
+                <form>
+
+                    <input type="radio" name="gender" value="male" checked> AC<br>
+                    <input type="radio" name="gender" value="female"> Non-AC<br>
+                </form>
+                <br>
+                <label>Enter Schools List (Comma Separated)</label>
+                <input type="text" class="form-control" placeholder="Schools List">
+                <br>
+                <label>Enter Schools List (Comma Separated)</label>
+                <input type="text" class="form-control" placeholder="Schools List">
+                <br>
+                <label>Enter List of Locations (Comma Separated)</label>
+                <input type="text" class="form-control" placeholder="Locations List">
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Start Time in the Morning</label>
+                        <input type="email" class="form-control" placeholder="Morning Start Time" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Start Time after school</label>
+                        <input type="text" class="form-control" placeholder="After School Start Time" autofocus>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <hr>
+                <label>Add four of the follwing Photos</label>
+                <br><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Uplaod a photo of the driver</label>
+                        <input type="button" class="btn-block btn btn-theme" value="Upload Photo" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Uplaod a photo of the caretaker</label>
+                        <input type="button" class="btn-block btn btn-theme" value="Upload Photo" autofocus>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>Uplaod a photo of vehicle from Outside</label>
+                        <input type="button" class="btn-block btn btn-theme" value="Upload Photo" autofocus>
+                    </div>
+                    <div class="col-md-6">
+                        <label>Uplaod a photo of vehicle from Inside</label>
+                        <input type="button" class="btn-block btn btn-theme" value="Upload Photo" autofocus>
+                    </div>
+                </div><br>
+
+                <hr>
+                <button class="btn btn-theme btn-block" href="index.html" type="submit"><i
+                        class="fa fa-lock"></i>REGISTRER
+                </button>
                 <hr>
 
 
@@ -85,28 +186,33 @@ MAIN CONTENT
             </div>
 
             <!-- Modal -->
-            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+                 class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title">Send us you phone number? We will get back to you within 24 hours</h4>
+                            <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">Send us you phone number? We will get back to you within 24
+                                hours</h4>
                         </div>
                         <div class="modal-body">
                             <p>Enter your contact number.</p>
-                            <input type="text" name="email" placeholder="contact number" autocomplete="off" class="form-control placeholder-no-fix">
+                            <input type="text" name="email" placeholder="contact number" autocomplete="off"
+                                   class="form-control placeholder-no-fix">
 
                         </div>
                         <div class="modal-footer">
                             <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                            <button data-dismiss="modal" data-toggle="modal" href="login.html#resetConfirmation" class="btn btn-theme" type="button">Submit</button>
+                            <button data-dismiss="modal" data-toggle="modal" href="login.html#resetConfirmation"
+                                    class="btn btn-theme" type="button">Submit
+                            </button>
 
                         </div>
                     </div>
                 </div>
             </div>
             <!-- modal -->
-
 
 
         </form>
